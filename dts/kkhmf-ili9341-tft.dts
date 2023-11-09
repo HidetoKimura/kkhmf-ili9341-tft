@@ -79,6 +79,7 @@
 			/* needed to avoid dtc warning */
 			#address-cells = <1>;
 			#size-cells = <0>;
+			cs-gpios = <&gpio 16 1>;
 
 			rpidisplay_ts: rpi-display-ts@0 {
 				compatible = "ti,ads7846";
