@@ -99,6 +99,11 @@
 				interrupts = <26 2>; /* high-to-low edge triggered */
 				interrupt-parent = <&gpio>;
 				pendown-gpio = <&gpio 26 1>;
+				touchscreen-swapped-x-y = <1>;
+				touchscreen-min-x = <330>;
+				touchscreen-min-7 = <330>;
+				touchscreen-size-x = <3600>;
+				touchscreen-size-y = <3600>;
 				ti,x-plate-ohms = /bits/ 16 <60>;
 				ti,pressure-max = /bits/ 16 <255>;
 			};
