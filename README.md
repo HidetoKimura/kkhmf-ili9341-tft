@@ -2,10 +2,17 @@
 
 # compile & deploy
 
+In PC
+~~~
+cd dts
+dtc -O dtb -o kkhmf-ili9341-tft.dtbo kkhmf-ili9341-tft.dts
+scp kkhmf-ili9341-tft.dtbo rpi@raspberrypi.local:
+~~~
+
 In rpi4
 ~~~
-# dtc -o dtb kkhmf-ili9341-tft.dtbo kkhmf-ili9341-tft.dts
-# cp kkhmf-ili9341-tft.dtbo /boot/overlay
+cp kkhmf-ili9341-tft.dtbo /boot/overlay
+sync
 ~~~
 
 /boot/config.txt
